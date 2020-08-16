@@ -1,4 +1,5 @@
 import axios from "axios";
+import React, { useState } from "react";
 
 const apiKey = "d5248f57029742a23f95eb62a3f7bc43";
 const url = "https://api.themoviedb.org/3";
@@ -71,6 +72,7 @@ export const fetchMovieByGenre = async (genre_id) => {
       overview: m["overview"],
       rating: m["vote_average"],
     }));
+    console.log(modifiedData);
     return modifiedData;
   } catch (error) {}
 };
@@ -181,8 +183,6 @@ export const fetchSimilarMovie = async (id) => {
         rating: m["vote_average"],
       }))
       .filter((v) => v.genre.includes(35));
-
-    console.log(modifiedData);
 
     return modifiedData;
   } catch (error) {}

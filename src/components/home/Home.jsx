@@ -74,7 +74,7 @@ export function Home() {
     );
   });
 
-  const movieList = movieByGenre.slice(0, 4).map((item, index) => {
+  const movieList = movieByGenre.map((item, index) => {
     return (
       <div className="col-md-3 col-sm-6" key={index}>
         <div className="card">
@@ -90,6 +90,7 @@ export function Home() {
             size={20}
             color1={"#f4c10f"}
           ></ReactStars>
+          <p>{item.page}</p>
         </div>
       </div>
     );

@@ -177,19 +177,19 @@ export function MovieDetail({ match }) {
       <div className="row mt-3">
         <div className="col-md-3">
           <p style={{ color: "#5a606b", fontWeight: "bolder" }}>RELEASE DATE</p>
-          <p style={{ color: "#f4c10f" }}>{detail.release_date}</p>
+          <p style={{ color: "#ffffff" }}>{detail.release_date}</p>
         </div>
         <div className="col-md-3">
           <p style={{ color: "#5a606b", fontWeight: "bolder" }}>RUN TIME</p>
-          <p style={{ color: "#f4c10f" }}>{detail.runtime}</p>
+          <p style={{ color: "#ffffff" }}>{detail.runtime}</p>
         </div>
         <div className="col-md-3">
           <p style={{ color: "#5a606b", fontWeight: "bolder" }}>BUDGET</p>
-          <p style={{ color: "#f4c10f" }}>{detail.budget}</p>
+          <p style={{ color: "#ffffff" }}>{detail.budget}</p>
         </div>
         <div className="col-md-3">
           <p style={{ color: "#5a606b", fontWeight: "bolder" }}>HOMEPAGE</p>
-          <p style={{ color: "#f4c10f" }}>
+          <p style={{ color: "#ffffff" }}>
             <a href={detail.homepage} target="_blank" rel="noopener noreferrer">
               {detail.homepage}
             </a>
